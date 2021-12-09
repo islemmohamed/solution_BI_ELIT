@@ -1,0 +1,84 @@
+----- API REST : ----------- 
+
+http://localhost:8087
+
+----- Authentication : -----
+
+http://localhost:8087/authenticate
+(Body : username + password,
+ Method : POST)
+
+----- Users : -----
+
+http://localhost:8087/users
+
+1- all users : http://localhost:8087/users/allUsers ; Method : GET
+
+2- find one user by a giving username : http://localhost:8087/users/oneUser/{iduser}, Method : GET
+
+3- add user : http://localhost:8087/users/addUser/{intitule}(intitule c le nom du role) , Method : POST , Body : users infos(username,password,nom,prenom,telephone,email,idorganisme).
+
+4- delete user by a giving username : http://localhost:8087/users/deleteUser/{iduser} , Method : DELETE
+
+5- updates :  Method : PUT ,
+	a- user general infos : http://localhost:8087/users/updateUserInfos/{iduser}. , Body : users infos(nom,prenom,telephone,email,idorganisme)
+	b- login : http://localhost:8087/users/updateUserNamePass/{iduser}. ,  Body : (username,password)
+	c- role : http://localhost:8087/users/updateUserRole/{iduser}/{intitule}. , No need Body
+
+6- http://localhost:8087/users/queriesUser/{iduser} : queries of a user by a giving iduser, Method : GET , Body : no need
+
+7- http://localhost:8087/users/rapports/{iduser} : all rapports of a user by a giving iduser, Method : GET , Body : no need
+
+----- Roles : -----
+http://localhost:8087/roles
+
+1- all roles: http://localhost:8087/roles/allRoles ; Method : GET
+
+2- add role : http://localhost:8087/addRole , Method : POST , Body : (intitule)
+
+----- Requests : ----
+
+http://localhost:8087/requests/{req} , req = string of the request without ; at the end.
+	 		 
+
+----- Queries: -----
+
+http://localhost:8087/queries
+
+1- save Query : http://localhost:8087/queries/saveQuery/{iduser} , method : POST, Body : (titre,valeur).
+
+2- get AllSavedQueries : http://localhost:8087/queries/allQueries , method : GET , no body
+
+3- Add Query to an organism : http://localhost:8087/queries/addQueryOrganism/{idquery}/{idorganism}, method : POST , no body
+
+4- Delete query : http://localhost:8087/queries/deleteQuery/{idquery},method : DELETE, no body
+
+5- Update query : http://localhost:8087/queries/UpdateQuery/{idquery}, method : PUT, no body
+
+6- delete authorization from an organism : http://localhost:8087/queries/deleteAuthorization/{idorganism}/{idquery} , method : DELETE, no body
+
+7- delete authorization from a user: http://localhost:8087/queries/deleteAuthorizationUser/{iduser}/{idquery} , method : DELETE, no body
+
+8- Add Query to a user : http://localhost:8087/queries/addQueryUser/{idquery}/{iduser}, method : POST , no body
+
+9-delete authorization from all except creator :  http://localhost:8087/queries/deleteAuthorizationOthers/{idquery} , method : DELETE , no body
+
+
+---- Rapports : -------
+http://localhost:8087/rapports
+
+1- http://localhost:8087/rapports/allRapports  , method : GET
+
+2- http://localhost:8087/rapports/addRapport/{iduser}   , method : POST , body : titre
+
+3- http://localhost:8087/rapports/addQueryRapport/{idrapport}/{idquery} , method : GET
+
+4- http://localhost:8087/rapports/addRapportOrganism/{idrapport}/{idorganism} , method : GET
+
+5- http://localhost:8087/rapports/deleteRapport/{idrapport} , method : DELETE
+
+6- http://localhost:8087/rapports/addRapportUser/{idrapport}/{iduser} , method : GET
+
+7- http://localhost:8087/rapports/deleteAuthorizationOthers/{idrapports} , method : DELETE
+
+
