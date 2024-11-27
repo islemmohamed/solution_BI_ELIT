@@ -76,7 +76,7 @@ Eureka, developed by Netflix, fulfills this exact purpose. Once implemented, the
 
 ---
 
-For more details, check out the [Download the PDF](./Pfe.pdf) (In french).
+For more details, check out the [Project Documentation](./Pfe.pdf) (In french).
 
 # solution_BI_ELIT
  microservices BI solution
