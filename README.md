@@ -59,77 +59,26 @@ This project follows a microservices architecture (Microservices implementation 
 
 ## Microservices
 
-### 1. **User Service**
+### 1. **Authentication Microservice**
 
-Handles user authentication, authorization, and management.
+The Authentication Microservice is responsible for managing authentication and access rights, including user management and their roles.
 
-- **Language**: [e.g., Node.js, Python]
-- **Port**: `3001`
-- **Endpoints**: `/api/users`
+### 2. **Report and Query Management Microservice**
 
-### 2. **Data Service**
+The Report and Query Management Microservice is designed to handle queries and reports saved within the tool's database
 
-Manages data fetching, transformation, and processing.
+### 3. **The Query Execution and Data Loading Microservice**
 
-- **Language**: [e.g., Python, Go]
-- **Port**: `3002`
-- **Endpoints**: `/api/data`
+The Query Execution and Data Loading Microservice is the only microservice that communicates with the Data Warehouse
 
-### 3. **Report Service**
+### 4. **The NoSQL Optimization Microservice**
+The NoSQL Optimization Microservice is designed to optimize the response time of heavy queries that are reused multiple times. This solution leverages NoSQL, where the result of a query is stored in a MongoDB database.
+As a result, executing a query a second time is replaced by directly retrieving its result from the MongoDB database, significantly improving efficiency and performance.
 
-Generates reports based on user-defined criteria.
+### 5. **Eureka**
+When your application needs to handle increased load and you have multiple instances of each microservice, it is crucial to maintain a registry of all available instances to distribute the load among them effectively.
 
-- **Language**: [e.g., Java, Node.js]
-- **Port**: `3003`
-- **Endpoints**: `/api/reports`
-
-### [Add more microservices as needed]
-
-## Installation
-
-### Prerequisites
-
-- **Docker**: [Installation guide](https://docs.docker.com/get-docker/)
-- **Docker Compose**: [Installation guide](https://docs.docker.com/compose/install/)
-- **Node.js**: [Installation guide](https://nodejs.org/)
-
-### Steps
-
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
-    ```
-
-2. Configure environment variables for each microservice. See `.env.example` for a template.
-
-3. Start the services using Docker Compose:
-
-    ```bash
-    docker-compose up --build
-    ```
-
-4. Access the application at `http://localhost:3000`.
-
-## Usage
-
-1. **Login**: Access the login page and enter your credentials.
-2. **Dashboard**: Navigate to the dashboard to view your data and reports.
-3. **Data Upload**: Upload data files or connect to data sources.
-4. **Generate Reports**: Use the report service to create custom reports.
-
-## API Documentation
-
-API documentation is available [here](./path-to-api-docs.md) or can be accessed via Swagger UI at `http://localhost:3000/api-docs`.
-
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/your-feature-name`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin feature/your-feature-name`
-5. Submit a pull request.
+Eureka, developed by Netflix, fulfills this exact purpose. Once implemented, the microservice instances register themselves with the Eureka registry. To call a microservice, you simply select an instance from the list exposed by Eureka, ensuring efficient load balancing and service discovery.
 
 ## License
 
