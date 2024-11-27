@@ -22,16 +22,16 @@
 
 ## Overview
 
-**PowerBI-like Microservices Platform** is a [brief description of what the project does]. This project mimics the functionality of PowerBI, providing advanced data analytics, visualization, and reporting capabilities in a microservices architecture.
+**PowerBI-like Microservices Platform** is an implementation of a business intelligence (BI) solution (close to Power BI) which offers society SPE a synthesized view of the performance of the company through dynamique creation of indicators, dashboards, detailed reports and multidimensional data analysis. This project mimics the functionality of PowerBI, providing advanced data analytics, visualization, and reporting capabilities in a microservices architecture.
 
 ## Architecture
 
 ![Architecture Diagram](./path-to-architecture-diagram.png)
 
-This project follows a microservices architecture, designed for scalability, flexibility, and robustness. The system is composed of the following core components:
+This project follows a microservices architecture (Microservices implementation — Netflix stack), designed for scalability, flexibility, and robustness. The system is composed of the following core components:
 
-- **Frontend**: [Description of the frontend, e.g., built with Vue.js, React, etc.]
-- **Backend Services**: Multiple microservices, each responsible for specific functionalities.
+- **Frontend**: Vue Js
+- **Backend Services**: Multiple microservices with springBoot, each responsible for specific functionalities(auth ,query optimization....).
 - **Databases**: 
   - **PostgreSQL**: Data warehouse for complex analytics.
   - **MySQL**: Core database to support the main application functionality.
