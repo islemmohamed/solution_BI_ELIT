@@ -13,12 +13,6 @@
 - [Technologies Used](#technologies-used)
 - [Database Setup](#database-setup)
 - [Microservices](#microservices)
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Documentation](#api-documentation)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Overview
 
@@ -80,18 +74,9 @@ When your application needs to handle increased load and you have multiple insta
 
 Eureka, developed by Netflix, fulfills this exact purpose. Once implemented, the microservice instances register themselves with the Eureka registry. To call a microservice, you simply select an instance from the list exposed by Eureka, ensuring efficient load balancing and service discovery.
 
-## License
-
-This project is licensed under the [MIT License](./LICENSE).
-
-## Contact
-
-- **Project Maintainer**: [Your Name](mailto:your-email@example.com)
-- **GitHub Issues**: [Issue Tracker](https://github.com/your-username/your-repo-name/issues)
-
 ---
 
-Feel free to modify this template according to your project's needs! If you need more specific sections or details, just let me know.
+For more details, check out the [Project Documentation](docs/project-doc.pdf).
 
 # solution_BI_ELIT
  microservices BI solution
