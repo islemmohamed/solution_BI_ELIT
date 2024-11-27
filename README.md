@@ -31,7 +31,7 @@
 This project follows a microservices architecture (Microservices implementation — Netflix stack), designed for scalability, flexibility, and robustness. The system is composed of the following core components:
 
 - **Frontend**: Vue Js
-- **Backend Services**: Multiple microservices with springBoot, each responsible for specific functionalities(auth ,query optimization....).
+- **Backend Services**: Multiple microservices with Spring Boot, each responsible for specific functionalities(auth ,query optimization....).
 - **Databases**: 
   - **PostgreSQL**: Data warehouse for complex analytics.
   - **MySQL**: Core database to support the main application functionality.
@@ -39,11 +39,11 @@ This project follows a microservices architecture (Microservices implementation 
 
 ## Features
 
-- **Data Analytics**: [Brief description of analytics capabilities].
-- **Customizable Dashboards**: [Details on dashboard customization].
-- **Real-time Data Processing**: [Explanation of real-time features].
-- **User Management**: [Details about user roles, authentication, etc.].
-- **Report Generation**: [Information on how reports can be generated].
+- **Data Analytics**: Provides powerful analytics capabilities, enabling users to gain insights from large datasets. Offers tools for performing descriptive, diagnostic, predictive, and prescriptive analytics to help businesses make data-driven decisions.
+- **Customizable Dashboards**: Empowers users to design personalized dashboards by adding, removing, or rearranging widgets such as charts, graphs, and tables. Supports various visualization types and filters to tailor dashboards to specific needs or preferences.
+- **Real-time Data Processing**: Delivers real-time data processing to ensure users have access to the most up-to-date information. This includes streaming data analytics, live dashboards, and immediate updates for critical metrics, helping teams act quickly.
+- **User Management**: eatures a comprehensive user management system that includes role-based access control (RBAC), authentication mechanisms (e.g., OAuth, LDAP), and user activity tracking. Ensures data security and tailored access for different organizational roles.
+- **Report Generation**: Simplifies the creation of detailed reports with customizable templates and export options (e.g., PDF, Excel, CSV). Users can schedule automated report generation and delivery or generate them on-demand based on their chosen parameters.
 
 ## Technologies Used
 
