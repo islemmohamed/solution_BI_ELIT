@@ -47,39 +47,15 @@ This project follows a microservices architecture (Microservices implementation 
 
 ## Technologies Used
 
-- **Frontend**: [Vue.js, React, etc.]
-- **Backend**: [Node.js, Python, etc.]
+- **Frontend**: Vue.js,apex.chart
+- **Backend**: Spring Boot, Python,Java
 - **Database**: PostgreSQL, MySQL, MongoDB
-- **Caching**: [Redis, MongoDB]
-- **Messaging**: [Kafka, RabbitMQ, etc.]
-- **Containerization**: Docker, Kubernetes
-- **APIs**: REST, GraphQL
+- **Caching**: MongoDB
+- **ETL**: Talend Open Studio
+- **Containerization**: Docker
+- **APIs**: REST, JPA
 
-## Database Setup
 
-### PostgreSQL (Data Warehouse)
-
-- **Host**: `your-postgresql-host`
-- **Port**: `5432`
-- **Username**: `your-username`
-- **Password**: `your-password`
-- **Database**: `your-database-name`
-
-### MySQL (Application Database)
-
-- **Host**: `your-mysql-host`
-- **Port**: `3306`
-- **Username**: `your-username`
-- **Password**: `your-password`
-- **Database**: `your-database-name`
-
-### MongoDB (Caching)
-
-- **Host**: `your-mongodb-host`
-- **Port**: `27017`
-- **Username**: `your-username`
-- **Password**: `your-password`
-- **Database**: `your-database-name`
 
 ## Microservices
 
