@@ -26,7 +26,7 @@
 
 ## Architecture
 
-![Architecture Diagram](./path-to-architecture-diagram.png)
+![Architecture Diagram](./arch_micro.png)
 
 This project follows a microservices architecture (Microservices implementation — Netflix stack), designed for scalability, flexibility, and robustness. The system is composed of the following core components:
 
