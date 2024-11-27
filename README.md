@@ -3,7 +3,7 @@
 
 # Project Name: PowerBI-like Microservices Platform
 
-![Project Logo](./path-to-your-logo.png)
+![Project Logo](./full-version/public/logo.png)
 
 ## Table of Contents
 
